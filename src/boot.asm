@@ -9,6 +9,9 @@ start:
 
     mov ax, 0x03
     int 0x10
+	
+	mov si, loaded_msg
+	call print_string
 
     ;Чтение секторов с диска
     mov ah, 0x02
@@ -40,7 +43,8 @@ print_string:
 .done:
     ret
 
-error_message db "LimeanBoot ERROR: Disk read error", 13, 10, 0
+error_message: db "[ ERROR ] Disk read error!", 10, 13, 0
+loaded_msg: db "[ LOG ] loading mandarn kernel...", 10, 13, 0
 
 times 510 - ($ - $$) db 0
 dw 0xAA55
