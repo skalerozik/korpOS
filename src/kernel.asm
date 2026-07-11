@@ -1,3 +1,4 @@
+;KorpOS kernel(mandarn)
 [BITS 16]
 [ORG 500h]
 
@@ -354,7 +355,8 @@ clear_screen:
     int 0x10
     ret
 
-hello_msg db 'Welcome to korpOS Aster!', 0
+hello_msg db 'Welcome to korpOS Aster!', 10, 13,
+		  db 'Type "help" for commands.', 0
 
 sysinf_str db 'fetch', 0
 help_str db 'help', 0
@@ -365,7 +367,7 @@ shut_str db 'shutdown', 0
 reboot_str db 'reboot', 0
 load_str db 'load', 0
 
-prompt db '[root@korpOS] >: ', 0
+prompt db 'korpOS>: ', 0
 command_buffer db 25 dup(0)
 unknown_msg db 'Unknown command.', 0
 mt db 13, 10, 0
