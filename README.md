@@ -1,3 +1,9 @@
 # korpOS
-Операционная система написанная на Ассемблере
-В данный момент находится в этапе раннего тестирования.
+---
+# korpOS it's simple Operating System for IBM/PC architecture.
+---
+# What has been done:
+- Simple bootloader
+- Single-threaded (Single-task) kernel
+---
+skalerozik. 2026
