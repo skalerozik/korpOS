@@ -1,6 +1,6 @@
 # korpOS
 ---
-# korpOS it's simple Operating System for IBM/PC architecture.
+# Simple Operating System for IBM/PC architecture.
 ---
 # What has been done:
 - Simple bootloader
