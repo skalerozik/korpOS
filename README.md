@@ -1,4 +1,4 @@
-# korpOS
+# korpOS Aster
 ---
 # Simple Operating System for IBM/PC architecture.
 ---
