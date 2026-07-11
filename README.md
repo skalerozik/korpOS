@@ -1,6 +1,4 @@
-# korpOS Aster
----
-# Simple Operating System for IBM/PC architecture.
+# korpOS Aster: Simple Operating System for IBM/PC architecture.
 ---
 # What has been done:
 - Simple bootloader
